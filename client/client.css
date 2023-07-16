@@ -1,0 +1,92 @@
+.clientWrapper {
+  display: flex;
+  background-image: url("../Assets/Images/RectangleBG.png");
+  padding-top: 80px;
+}
+.clientLeft,
+.clientRight {
+  flex: 1;
+}
+.clientmain {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 0px;
+  padding-bottom: 60px;
+  font-family: "inter";
+}
+.cH2 {
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 16px;
+  padding-left: 5px;
+}
+.cH1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+  padding-top: 0;
+  margin-top: 0;
+}
+.cP,
+.cH4,
+.cH4 {
+  font-family: "inter";
+}
+
+.cBox {
+  display: flex;
+  width: 880px;
+  gap: 40px;
+}
+.cboxText {
+  background: #ffffff;
+  box-shadow: 6px 6px 10px rgba(227, 40, 70, 0.08);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 23px;
+  border-top: 10px solid #f22225;
+}
+.downArrow {
+  position: relative;
+  top: -100px;
+  right: -60px;
+}
+.cProfile {
+  width: 170px;
+  margin-bottom: 50px;
+}
+.cBgleft {
+  position: relative;
+  top: -10px;
+  right: -100px;
+  opacity: 0.7;
+}
+.cBgright {
+  position: relative;
+  top: 300px;
+  right: -120px;
+  opacity: 0.7;
+}
+@media screen and (max-width: 640px) {
+  .cBgleft,
+  .cBgright {
+    display: none;
+  }
+  .cBox {
+    flex-direction: column;
+    width: 100%;
+  }
+  .downArrow {
+    display: none;
+  }
+}

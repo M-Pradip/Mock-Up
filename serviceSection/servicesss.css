@@ -1,0 +1,120 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.servicesWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px; */
+  padding-top: 50px;
+}
+.servicesLeft,
+.serviceRight {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 90px;
+}
+
+.service {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicesText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "inter";
+  line-height: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  /* font-size: 2em; */
+}
+.servicesBox {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sBox1,
+.sBox2,
+.sBox3 {
+  height: 300px;
+  box-shadow: 8px 8px 20px 3px rgba(147, 147, 147, 0.13);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "inter";
+}
+.icon1,
+.sH2,
+.sP {
+  padding-left: 30px;
+}
+
+.sBox1,
+.sBox1 .sButton {
+  background-color: #f22225;
+  color: #ffffff;
+  border-left-color: #ffffff;
+}
+
+button.sButton {
+  border: none;
+  height: 37px;
+  border-left: 3px solid #f22225;
+  background-color: #ffffff;
+  color: #f22225;
+  padding-left: 30px;
+}
+
+.sButton:hover {
+  border: 3px solid #f22225;
+  padding: 10px 15px;
+}
+.lineDotService {
+  display: flex;
+  align-items: center;
+}
+.sH3 {
+  font-size: 14px;
+  padding-left: 5px;
+}
+@media screen and (max-width: 640px) {
+  .servicesBox {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  .servicesLeft,
+  .serviceRight {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  .servicesWrapper {
+    padding-top: 100px;
+  }
+  .service {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024) {
+  .service {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+  }
+}

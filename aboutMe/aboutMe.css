@@ -1,0 +1,126 @@
+.wrapperAbout {
+  display: flex;
+  /* margin: 100px 0; */
+  padding: 100px 0;
+}
+
+.aboutLeft,
+.aboutRight {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+}
+.aboutMe {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  flex-wrap: wrap;
+}
+.top {
+  display: flex;
+  gap: 20px;
+}
+.text {
+  font-family: "inter";
+  padding-left: 20px;
+}
+.Abutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: #f22225;
+  border: none;
+  color: #fff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.photo {
+  display: flex;
+  gap: 20px;
+}
+.smallPhoto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.Abox1,
+.Abox2,
+.Abox3,
+.Abox4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 210px;
+  height: 220px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px 5px rgba(171, 171, 171, 0.1),
+    5px 5px 15px rgba(147, 147, 147, 0.13);
+  font-family: "inter";
+  font-size: 13px;
+}
+.ah1 {
+  font-size: 1.6em;
+}
+.Abutton:hover {
+  background-color: #b1acac;
+  color: black;
+}
+.photo img {
+  /* width: 100%; */
+  max-width: 260px;
+}
+.smallPhoto {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.smallPhoto img {
+  /* width: 48%; */
+  width: 150px;
+}
+
+@media screen and (max-width: 640px) {
+  .top {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  .aboutLeft,
+  .aboutRight {
+    display: none;
+  }
+  .photo img {
+    max-width: 60%; /* Set the maximum width for smaller screens */
+    max-height: 95%;
+  }
+
+  .smallPhoto img {
+    height: 70%;
+    /* width: 100%; Set the width of the small photos to 100% for smaller screens */
+    max-width: 150px;
+  }
+  .bottom {
+    flex-wrap: wrap;
+  }
+}

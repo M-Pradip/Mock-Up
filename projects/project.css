@@ -1,0 +1,110 @@
+.projectBody {
+  display: block;
+  margin: 30px;
+}
+.projectWrapper {
+  display: flex;
+  /* margin: 50px 0; */
+  padding: 50px 0;
+}
+.leftProject,
+.rightProject {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.project {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  width: 386px;
+  gap: 20px;
+}
+.projectBoxText {
+  box-shadow: 8px 8px 20px 3px rgba(147, 147, 147, 0.13);
+  padding-left: 20px;
+  padding-top: 5px;
+}
+h4.pH4 {
+  color: #f22225;
+  font-family: "inter";
+}
+.top-text {
+  font-family: "inter";
+  text-align: left;
+  align-self: flex-start;
+}
+h1.pH1,
+h2.pH2 {
+  text-align: left;
+  margin-top: 0;
+  padding: 0;
+}
+h2.pH2 {
+  padding-top: 20px;
+  font-size: 13px;
+}
+.pH1 {
+  padding-bottom: 30px;
+}
+h3.pH3 {
+  font-family: "inter";
+}
+p.pP {
+  font-family: "inter";
+}
+.viewButton {
+  border: none;
+  background-color: transparent;
+  color: #f22225;
+  padding-bottom: 20px;
+  padding-left: 2px;
+  font-family: "inter";
+  font-weight: 600;
+}
+.viewButton:hover {
+  color: rgb(255, 255, 255);
+  background-color: #f22225;
+  font-weight: 400;
+  padding: 7px 16px;
+
+  border: none;
+}
+.more {
+  background-color: #f22225;
+  color: white;
+  padding: 7px 16px;
+  border-radius: 50px;
+  border: none;
+  margin-top: 100px;
+}
+.more:hover {
+  background-color: #b1acac;
+  color: black;
+}
+@media screen and (max-width: 640px) {
+  .project {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .leftProject,
+  .rightProject {
+    display: none;
+  }
+  .top-text {
+    align-self: center;
+  }
+  .card {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+}

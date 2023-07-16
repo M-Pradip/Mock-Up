@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+li {
+  margin-right: 20px;
+}
+li.portfolio a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  color: #f22225;
+}
+
+li a {
+  text-decoration: none;
+  color: #757b82;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+}
+.button {
+  background-color: #f22225;
+  border: 0;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  gap: 10px;
+  width: 130px;
+}
+li a:hover {
+  color: #f22225;
+}
+
+.button:hover {
+  background-color: gray;
+  color: black;
+}
+@media screen and (max-width: 640px) {
+  ul {
+    justify-content: center;
+  }
+}
